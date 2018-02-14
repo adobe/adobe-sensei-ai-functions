@@ -1,0 +1,35 @@
+{
+    "name": "todos-app-pwa",
+    "version": "1.0.0",
+    "description": "A PhoneGap Todo App & Progressive Web App with Offline Support, built with Framework7+Vue.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hollyschinsky/todos-app-pwa"
+    },
+    "author": "Holly Schinsky",
+    "license": "Apache-2.0",
+    "keywords": [
+        "ecosystem:phonegap",
+        "ecosystem:cordova",
+        "cordova:template",
+        "phonegap:template"
+    ],
+    "bugs": {
+        "url": "https://github.com/hollyschinsky/todos-app-pwa/issues"
+    },
+    "homepage": "https://github.com/hollyschinsky/todos-app-pwa",
+    "dependencies": {
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-statusbar": "~2.2.3",
+        "phonegap-plugin-service-worker": "https://github.com/phonegap/phonegap-plugin-service-worker"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-statusbar": {},
+            "phonegap-plugin-service-worker": {}
+        },
+        "platforms": [
+            "ios"
+        ]
+    }
+}
