@@ -1,21 +1,19 @@
 ---
 layout: module
-title: Lesson 3&#58; Webhook Creation & Registration
+title: Lesson 3&#58; Webhook Creation
 ---
 
 ## Overview
-Create and register a webhook action to be called when an ***Asset Created*** event is fired from Creative Cloud.
+Create a webhook action to be called when an *Asset Created* I/O event is fired.
 
 ## Exercises
-1. Configure a new webhook with I/O Events
-  - Create a new package named `cc` using `wsk`
-    ```bash
-    $ wsk package create cc
-  
-  - Create a new action called [cc_event_handler](cc_event_handler.js) using the code defined in [cc_event_handler.js](cc_event_handler.js)
+1. Create a new package named `cc` using `wsk`
 
-    ```bash
-    $ wsk action create cc/cc_event_handler ./cc_event_handler.js --web true
+       wsk package create cc
+
+2. Create a new action called [cc_event_handler](cc_event_handler.js) using the code defined in [cc_event_handler.js](cc_event_handler.js) within the `cc` package. This action will be used as the webhook that will respond to Creative Cloud I/O Events.
+
+       wsk action create cc/cc_event_handler ./cc_event_handler.js --web true
 
 ## Resources
 
