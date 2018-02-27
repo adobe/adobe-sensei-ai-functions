@@ -10,35 +10,31 @@ Code the Composition (app) to run when the asset created event occurs.
 
 1. Code the context:
 
-```
- /* get Adobe Context */
-  composer.retain(
-    composer.sequence(
-      params => ({key: ":oauth:" + params.asset.user_id, fields: "token"}),
-      'cache/persist'
-    )
-  ),
-```
+
+        /* get Adobe Context */
+        composer.sequence(
+           params => ({key: ":oauth:" + params.asset.user_id, fields: "token"}),
+                'cache/persist'
+        )
+
 2. Add the `sensei-imagequality` action:
 
-```
-composer.sequence(
-   params => ({
-        "image": params.imageObject
-   }),
-   'sensei-imagequality'
-)
 
-```
+        composer.sequence(
+           params => ({"image": params.imageObject}),
+                 'sensei-imagequality'
+        )
+
+
 
 4. Add the `sensei-bodycrop` action:
-```
-composer.sequence(
-   params => ({
-        "image": params.imageObject
-   }),
-   'sensei-bodycrop'
-)
+ ```
+ composer.sequence(
+    params => ({
+         "image": params.imageObject
+    }),
+    'sensei-bodycrop'
+ )
 ```        
 5. Add the `sensei-autoswatch` action
 
