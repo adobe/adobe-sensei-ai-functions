@@ -1,49 +1,32 @@
 ---
 layout: module
-title: Lesson 7&#58; Deploy Composition, Triggers, Rules
+title: Lesson 7&#58; Sensei Body Crop
 ---
 
 ## Overview
-Create and deploy the Composition (app) to run when the asset created event occurs.
+In this exercise you will add the Sensei Body Crop function to 
 
 ## Exercises
-1. Open the Adobe I/O Runtime Shell (located in your Applications folder) 
+1. In VS Code, open `exercises/exercise-3`. 
 
-2. Execute the following command to preview the Composition defined in the `[project-root]/compositions/saw.js` file.
 
-        > app preview </path/to>/compositions/saw.js
+## Try it!
+1. First preview your composition again to ensure your new changes are shown:
 
-2. When ready, deploy the app with the name `asset_created_composition` before moving to the next step:
+    app preview ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
 
-        > app update asset_created_composition </path/to>/compositions/saw.js
+2. Next update the current `asset_created_composition` app with your new version:
 
-3. Define an OpenWhisk Trigger
+    app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
 
-    When the webhook is invoked, it creates an internal OpenWhisk Event (trigger) called `cc_asset_created`. Configure this trigger using the commands bellow:
+3. Now open the browser to your Creative Cloud folder previously created again and trigger an `asset_created` event by uploading the `~/adobe-sensei-ai-functions/images/exercise-3.png` image into it.
 
-        > wsk trigger create cc_asset_created
-        > wsk rule create cc_asset_created_rule cc_asset_created asset_created_composition
-        > wsk rule enable cc_asset_created_rule
+5. Switch back to the Adobe I/O Runtime Shell and type:
 
-4. Create a configuration file called `config.json` to contain the Creative Cloud and AEM parameters required below:
+      session list
 
-        {
-        "config": {
-            "cc_apiKey": "--io-integration-api-key--",
-            "aem_host": "52.191.166.198",
-            "aem_port": "80",
-            "aem_user_id": "admin",
-            "aem_user_password": "--"
-        }
-        }        
+6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
 
-5. Update the `cc_event_handler` action with the `new config.json`
-
-        > wsk action update cc/cc_event_handler --param-file ./config.json
-
-## Resources
-
-Troubleshooting with Redis note needed??
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

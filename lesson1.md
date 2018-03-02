@@ -1,15 +1,21 @@
 ---
 layout: module
-title: Lesson 1&#58; Overview & Demo
+title: Lesson 1&#58; Demo & Overview
 ---
 
 ## Demo
 
 ![](images/sensei-workflow.png)
 
+- Demo the workflow (Dawn 15 mins on demo/Adobe Sensei functions)
+- Overview of serverless and other OpenWhisk related terms (slides URL?)
 
-- Demo the workflow
-- Overview of serverless and other OpenWhisk and related terms (actions, rules, triggers, compositions)
+## Serverless/OpenWhisk Terminology
+- action 
+- rule
+- trigger 
+- composition
+
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

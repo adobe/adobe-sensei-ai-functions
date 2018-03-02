@@ -1,23 +1,47 @@
 ---
 layout: module
-title: Lesson 2&#58; Project Setup
+title: Lesson 2&#58; Adobe I/O Runtime Shell
 ---
 
-## Project Setup
-1. Locate the pre-loaded Adobe stock images
+## Overview
+The Adobe I/O Runtime Shell is a graphical interface to help you visualize and debug your serverless functions and compositions with great ease. It has been pre-installed on your machine and you will use it throughout the workshop. Before using it however, you must authorize your namespace to give yourself your own sandbox to play in for the duration of this lab.
 
-   >Assuming the images from [here](https://wiki.corp.adobe.com/display/AdobeCloudPlatform/Cross+Cloud+Sensei+Content+Velocity+Workflow+Demo+Instructions)
+## Setup
+1. Open a Finder and locate the Adobe I/O Runtime Shell
+![](images/io-runtime-icon.png):
 
-2. Locate the pre-loaded project solution folder to use for reference throughout lab at:
+2. Authorize your namespace based on the auth key provided for your userid by entering the following command:
 
-   >Assuming it's pre-loaded, otherwise add location
+        auth add your_namespace_key_goes_here
 
-3. Create a new folder on the desktop to use for your working project and `cd` into it
+  You should receive a response for your userid like shown below:
 
-        mkdir ~/sensei-functions-lab
-        cd ~/sensei-functions-lab/
+  ![](images/auth_namespace.png)
 
-   >Modify commands throughout as needed depending on if Mac or Win computer supplied)
+## Exercises
+1. Using the Runtime Shell, create a new app (aka: composition) based on the built-in hello demo with the following command:
+
+       app create hello-app @demos/hello.js
+
+2. Invoke your `hello-app` with a name parameter:
+
+       app invoke --p name sensei
+
+3. Preview the `if.js` demo to see an example of an app with more of a flow structure:
+
+       app preview @demos/if.js
+
+> Take a moment and click on the **Code** tab to see view the code behind this app. Notice it uses the `authenticate` action as the condition, and takes the `welcome` or `login` action path depending on the result returned from `authenticate`.
+
+       composer.if(
+          /* cond */
+          'authenticate',
+          /* then */
+          'welcome',
+          /* else */
+          'login')
+
+> You can also click on any of the actions that make up this app to find out more details on the expected parameters etc.
 
 
 <div class="row" style="margin-top:40px;">

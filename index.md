@@ -1,24 +1,30 @@
 ---
 layout: home
-title:  Adobe Sensei AI Functions Lab
+title:  Adobe Sensei functions 
 ---
 
 ## What You Will Learn
 
-In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, I/O platform and AI services.
+In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, I/O platform and Adobe Sensei functions. 
 
 ### Technology Used
 - [Apache OpenWhisk](https://openwhisk.apache.org/)
 - [Adobe I/O Platform](https://www.adobe.io/)
 
-### Project Repo
-- [Adobe Sensei AI Functions](https://github.com/apiplatform/adobe-sensei-ai-functions)
+### Project Exercises/Solutions
+The folder for the exercises and solutions have been pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`
+
+> If at any point you are stuck in an exercise, simply replace your version with the `composition.js` from the correspnding `solutions ` folder.
+
+<!--- [Adobe Sensei Functions](https://github.com/apiplatform/adobe-sensei-ai-functions)-->
 
 ### Requirements & Dependencies
-- A code editor
+- Visual Studio Code
 - Browser
 - Internet Connection
-- Adobe Creative Cloud ID
+- Adobe Creative Cloud userid/pw
+- AEM instance
+- AEM userid/pw
 - Images (stock photos provided)
 
 ## Issues/Feedback
@@ -29,9 +35,9 @@ In this lab you will learn how to build a serverless app that takes advantage of
 
 - Or find me on Twitter:
 
-    <a href="https://twitter.com/dragosche" class="twitter-follow-button" data-show-count="true"
+    <a href="https://twitter.com/adobeio" class="twitter-follow-button" data-show-count="true"
     data-size="large" data-lang="en">Follow
-    @dragosche</a>
+    @adobeio</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 ## Resources

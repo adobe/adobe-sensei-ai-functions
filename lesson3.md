@@ -1,21 +1,36 @@
 ---
 layout: module
-title: Lesson 3&#58; Webhook Creation
+title: Lesson 3&#58; Adobe Console Integration
 ---
 
 ## Overview
-Create a webhook action to be called when an *Asset Created* I/O event is fired.
+The Adobe I/O Console provides the definitive destination for any developer looking to engage with and integrate Adobe cloud, mobile, and web technologies.
 
-## Exercises
-1. Create a new package named `cc` using `wsk`
+## Adobe Console Integration Setup
+1. Open your browser to the [Adobe I/O Console](https://console.adobe.io).
+2. Login with your pre-defined CC id and pw.
+3. Ensure the **Integrations** tab is selected, then locate the integration by the name of `Sensei lab X` (where X is your assigned lab #) and click on it.
+4. Once it's open, locate the **Default redirect URI** for your assigned user number and copy it. For instance, the one assigned to user **Sensei Lab 1** is outlined in red below:
 
-       wsk package create cc
+  ![](images/console-redirect.png)
 
-2. Create a new action called [cc_event_handler](cc_event_handler.js) using the code defined in [cc_event_handler.js](cc_event_handler.js) within the `cc` package. This action will be used as the webhook that will respond to Creative Cloud I/O Events.
+  > This URL will be different for each user so make sure you locate the one for your specific user number.
 
-       wsk action create cc/cc_event_handler ./cc_event_handler.js --web true
+5. Open the URL copied from the **Default redirect URI** in the previous step to authorize your app to access your Creative Cloud files. When it is run the first time, you will receive a pop-up like below, where you should click on the **Allow Access** button:
 
-## Resources
+  ![](images/authorize-app.png)
+
+  > Don't worry if you did not receive the pop-up, it may have been run already in a previous lab. 
+
+   You will then be re-routed to the Adobe Creative Cloud site where you can login with the Creative Cloud userid/pw provided to you for the lab.
+
+6. Once logged in, look for the **Creative Cloud Files** link under **Assets** and click on it. 
+
+7. **IMPORTANT** Before moving on, you must create your own personal folder to be used throughout this workshop. On the top right, click on the Actions arrow and choose to Create Folder from the options:
+
+   ![](images/cc-folder-create.png)
+
+  Name it `sensei-lab-x` where x is your assigned lab user number.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

@@ -1,43 +1,62 @@
 ---
 layout: module
-title: Lesson 5&#58; Define Actions
+title: Lesson 5&#58; Sensei Image Quality
 ---
 
 ## Overview
+In this exercise you will use the Adobe Sensei Image Quality function to 
 
 ## Exercises
+1. Open the **Visual Studio Code** application on your worksation located under Applications or in the app toolbar.
 
-#### Add Supporting Actions
-1. Create an action named `aem-copy-asset` to copy the asset from Creative Cloud to AEM 
+2. In **Visual Studio Code**, go to **File | Open ** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
 
-       wsk action update aem-copy-asset ./actions/aem-assets/openwhisk-aem-assets-0.0.2.js --main action.copyFromCC
+3. Now open the `solutions/exercise-1/composition.js` file (go over the Composer concepts for `retain`, `sequence`).
 
-2. Create an action named `aem-update-tags` to update asset tags
+4. Using the Adobe I/O Runtime Shell, preview the current session flow for exercise 1 with the following command:
 
-       wsk action update aem-update-tags ./actions/aem-assets/openwhisk-aem-assets-0.0.2.js --main action.updateAssetTags
+      app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-3. Create an action named `cc-upload-manual` to upload the manual CC assets
+5. Go back into VS Code and open `exercises/exercise-1`. Add the Sensei Image Quality function which is defined with an action name of `/sensei/1.0/sensei-imagequality`. You'll need to pass in the `imageObject` parameter for `image` and retain the results. Begin coding at the TODO block ```/**
+     * TODO: Invoke the /sensei/1.0/sensei-imagequality action
+     * passing the imageObject as parameter
+     */```
 
-       wsk action update cc-upload-manual ./actions/cc-assets/openwhisk-cc-assets-0.0.2.js --main action.uploadManualProcess
+     <!-- SOLUTION
+     composer.retain(
+      composer.sequence(
+        params => ({
+          "image": params.imageObject
+        }),
+      '/sensei/1.0/sensei-imagequality'
+      )
+    ),
+    /* grab image quality results */
+    ({result, params}) => Object.assign({}, result, params)-->
 
-#### Add Sensei Actions
-1. Sensei Autotag - create an action named `sensei-autotag` to tag an image based on attributes discovered with Adobe Sensei:
-    
-       wsk action update sensei-autotag ./actions/sensei-autotag/blackbox-action.js --docker docker-senseiwins-release.dr-uw2.adobeitc.com/openwhisk-runtime/autotagging/nodejs:0.0.1 -m 2560 --param confidence 0.5 --param results 10
+## Try it!
+1. First preview your composition again to ensure your new changes are shown:
 
-2. Sensei Image Quality - create an action named `sensei-image-quality`
+      app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-       wsk action update sensei-imagequality ./actions/sensei-imagequality/blackbox-action.js --docker docker-senseiwins-release.dr-uw2.adobeitc.com/openwhisk-runtime/imagequality/nodejs:0.0.1 -m 2560
+2. Next update the current `asset_created_composition` app with your new version:
 
-3. Body crop - create an action named `sensei-bodycrop`
+      app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-       wsk action update sensei-bodycrop ./actions/sensei-bodycrop/blackbox-action.py --docker docker-senseiwins-release.dr-uw2.adobeitc.com/openwhisk-runtime/smartproductcrop/python:0.0.1 -m 2048
+3. Now open the browser to your Creative Cloud files again and navigate into the new folder you created in a previous step (**sensei-lab-1** for instance).
 
-4. Auto swatch - create an action named `sensei-autoswatch`
+4. Trigger an `asset_created` event by uploading an image to this folder. We've provided one for testing within the `~/adobe-sensei-ai-functions/images` folder named `exercise-1.png`. Drag and drop the image into the folder.
 
-       wsk action update sensei-autoswatch ./actions/sensei-autoswatch/blackbox-action.py --docker docker-senseiwins-release.dr-uw2.adobeitc.com/openwhisk-runtime/autoswatch/python:0.0.1 -m 2048
+5. Switch back to the Adobe I/O Runtime Shell and type:
 
-## Resources
+      session list
+
+  > This command will list all the sessions running, including actions and apps.
+  
+6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
+
+> In the Adobe I/O Runtime Shell, you can execute the `action get /sensei/1.0/` command to view all of the current Adobe Sensei functions defined in your namespace for use.
+
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
