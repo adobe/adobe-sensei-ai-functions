@@ -14,7 +14,7 @@ In this lab you will learn how to build a serverless app that takes advantage of
 ### Project Exercises/Solutions
 The folder for the exercises and solutions have been pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`
 
-> If at any point you are stuck in an exercise, simply replace your version with the `composition.js` from the correspnding `solutions ` folder.
+> If at any point you are stuck in an exercise, simply replace your version with the `composition.js` from the corresponding **_solutions_** folder.
 
 <!--- [Adobe Sensei Functions](https://github.com/apiplatform/adobe-sensei-ai-functions)-->
 

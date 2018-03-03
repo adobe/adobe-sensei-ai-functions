@@ -7,9 +7,9 @@ title: Lesson 5&#58; Sensei Image Quality
 In this exercise you will use the Adobe Sensei Image Quality function to 
 
 ## Exercises
-1. Open the **Visual Studio Code** application on your worksation located under Applications or in the app toolbar.
+1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder or in the apps toolbar.
 
-2. In **Visual Studio Code**, go to **File | Open ** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
+2. Once open, go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
 
 3. Now open the `solutions/exercise-1/composition.js` file (go over the Composer concepts for `retain`, `sequence`).
 
