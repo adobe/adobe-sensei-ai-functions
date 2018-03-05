@@ -37,6 +37,8 @@ In this exercise you will add the Sensei Auto Swatch function to ... and use the
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-4/composition.js
 
+      ![](images/exercise4-flow.png)
+
 2. Next update the current `asset_created_composition` app with your new version:
 
        app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-4/composition.js

@@ -15,6 +15,8 @@ In this exercise you will add the Sensei Body Crop function to
 
      app preview ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
 
+  ![](images/exercise3-flow.png)
+
 2. Next update the current `asset_created_composition` app with your new version:
 
      app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js

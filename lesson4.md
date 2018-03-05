@@ -21,7 +21,7 @@ Understand how your Adobe I/O integration is configured with a webhook to respon
 
     In the result you should see a SEQUENCE action with the name of `asset_created_composition_handler` in package `acp-events`. You can click on it to view more details.
 
-   ![](images/asset_created_composition_handler.png)
+    ![](images/asset_created_composition_handler.png)
 
    > You can also list actions specific to a namespace/package and use a command like: `actions get /sensei-lab-x/acp-events/` with your assigned namespace/lab number.
 
@@ -29,7 +29,12 @@ Understand how your Adobe I/O integration is configured with a webhook to respon
 
    An example of the log output from an invocation of this handler is shown below for reference:
 
-  ![](images/handler-log-example.png)
+![](images/handler-log-example.png)
+
+6. Before leaving the Adobe I/O Runtime Shell, execute the `action get /sensei/1.0/` command to view the names of the Adobe Sensei functions currently defined in your namespace. You should see a list like the following. These actions will be used throughout the rest of the exercises to add specific Adobe Sensei functions.
+
+   ![](images/sensei-action-list.png)
+  
 
 <!-- SAVE FOR LATER SETUP 
 ### Update Existing Integration

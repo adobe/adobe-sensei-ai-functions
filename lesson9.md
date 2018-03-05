@@ -43,6 +43,8 @@ In this exercise you will add the Sensei Auto Tag function to ... and use the AE
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js
 
+      ![](images/exercise5-flow.png)
+
 2. Next update the current `asset_created_composition` app with your new version:
 
        app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js

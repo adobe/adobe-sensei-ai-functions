@@ -35,13 +35,15 @@ In this exercise you will add an action to be used for uploading an asset to the
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
 
+      ![](images/exercise2-flow.png)
+
 2. Next update the current `asset_created_composition` app with your new version:
 
        app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
 
 3. Now open the browser to your Creative Cloud folder previously created again and trigger an `asset_created` event by uploading the `~/adobe-sensei-ai-functions/images/exercise-2.png` image into it.
 
-5. Switch back to the Adobe I/O Runtime Shell and type:
+5. Switch back to the Adobe I/O Runtime Shell to find your session:
 
        session list
 

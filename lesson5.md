@@ -4,20 +4,29 @@ title: Lesson 5&#58; Sensei Image Quality
 ---
 
 ## Overview
-In this exercise you will use the Adobe Sensei Image Quality function to 
+In this exercise you will use the Adobe Sensei Image Quality function to retrieve an image aesthetic score. 
 
 ## Exercises
-1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder or in the apps toolbar.
+1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
 
-2. Once open, go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
+2. Go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
 
-3. Now open the `solutions/exercise-1/composition.js` file (go over the Composer concepts for `retain`, `sequence`).
+3. Begin by opening the `solutions/exercise-1/composition.js` file to learn about some specific concepts you'll need to understand for the remainder of the lab.
+  
+  -  `composer.sequence(task_1, task_2, ...)` - runs a sequence of tasks
+  
+      > The input parameter object for the composition is the input parameter object of the first task in the sequence. The output parameter object of one task in the sequence is the input parameter object for the next task in the sequence.
 
-4. Using the Adobe I/O Runtime Shell, preview the current session flow for exercise 1 with the following command:
+  - `composer.retain(task)` - a parameter retention function 
+  
+      >`retain` produces an output with two fields: `params` and `result` where `params` is the input parameter of the composition and `result` is the output of `task`.
+  
+4. Using the Adobe I/O Runtime Shell, preview the current session flow for exercise 1 with the following command to help visualize the app starting point:
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-5. Go back into Visual Studio Code and open `exercises/exercise-1/composition.js`. Locate the `TODO` block comment and add a call to the Sensei Image Quality function, which is defined using an action name of `/sensei/1.0/sensei-imagequality`. You'll need to pass in the `imageObject` parameter for `image` and retain the results. 
+
+5. Go back into Visual Studio Code and open `exercises/exercise-1/composition.js`. Locate the `TODO` block comment and add a call to the Sensei Image Quality function, which is defined using an action name of `/sensei/1.0/sensei-imagequality`. You'll need to pass in the `imageObject` parameter for `image` and retain the results.
 
      <!-- SOLUTION
      composer.retain(
@@ -32,29 +41,44 @@ In this exercise you will use the Adobe Sensei Image Quality function to
     ({result, params}) => Object.assign({}, result, params)-->
 
 ## Try it!
-1. Preview your composition again to ensure your new changes are shown:
+1. Preview your composition code to ensure your new changes are shown:
 
-     app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
+       app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-![](images/exercise1-flow.png)
+    ![](images/exercise1-flow.png)
 
-1. Update the current `asset_created_composition` app with your new version:
+2. Update the current `asset_created_composition` app with your new version:
 
-      app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
+       app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-1. Now open the browser to your Creative Cloud files again and navigate into the new folder you created in a previous step (**sensei-lab-1** for instance).
+1. Now go back to the Creative Cloud instance you're logged into in the browser and and navigate into the new folder you created previously (**sensei-lab-1** for instance).
 
-1. Trigger an `asset_created` event by uploading an image to this folder. We've provided one for testing within the `~/adobe-sensei-ai-functions/images` folder named `exercise-1.png`. Drag and drop the image into the folder.
+1. Drag and drop (or upload) an image from the workstation into the folder in Creative Cloud to trigger an `asset_created` event. There are images provided for you to use within the `~/adobe-sensei-ai-functions/images` folder.
 
-1. Switch back to the Adobe I/O Runtime Shell and type:
+1. Switch back to the Adobe I/O Runtime Shell and run the `session list` command to list all of the current sessions:
 
        session list
-
-   > This command will list all the sessions running, including actions and apps.
   
-1. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
+1. Locate the most recent `asset_created_composition` running and click on the session id to view the session. The `RESULT` tab displays the results in JSON format. If the Image Quality Sensei function was run successfully, it should contain an element named `scores` with values assigned for various attributes which are further explained below. The `quality` value ranges between 0-1 where a higher quality image results in a higher score. All of the other individual attributes contribute to the overall `quality` score.
 
-   > In the Adobe I/O Runtime Shell, you can execute the `action get /sensei/1.0/` command to view all of the current Adobe Sensei functions defined in your namespace for use.
+    ![](images/image-quality-scores.png)
+
+
+   - **Balancing Element** - Looks for balance in composition, if the photo looks balanced/imbalanced 
+   - **Color Harmony** - How balanced the colors are
+   - **Interesting Content** - 
+  Whether there's interesting content in the photo
+   - **Interesting Lighting** - Colorful-ness in the lighting - night scene, sunset, interesting lighting effects. 
+   - **Repetition** - Whether there's repetition (pattern, composition...) in the photo
+   - **Symmetry** - Looks for symmetry in composition and object
+   - **Depth of Field** - https://en.wikipedia.org/wiki/Depth_of_field
+   - **Object Emphasis** - Whether there a main subject
+   - **Rule of Thirds** - https://en.wikipedia.org/wiki/Rule_of_thirds
+   - **Vivid Color** -	Saturation of color and visual reception
+
+2. Next click on the **SESSION FLOW** tab. If your code ran successfully, you should see something like below, where all actions completed successfully and are denoted in green:
+
+    ![](images/exercise1-run.png)
 
 
 <div class="row" style="margin-top:40px;">
