@@ -1,27 +1,27 @@
 ---
 layout: module
-title: Lesson 5&#58; Sensei Image Quality
+title: Exercise 1&#58; Sensei Image Quality
 ---
 
 ## Overview
-In this exercise you will use the Adobe Sensei Image Quality function to retrieve an image aesthetic score. 
+In this exercise you will use the Adobe Sensei Image Quality function to retrieve an image aesthetic score.
 
-## Exercises
+## Steps
 1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
 
 2. Go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
 
 3. Begin by opening the `solutions/exercise-1/composition.js` file to learn about some specific concepts you'll need to understand for the remainder of the lab.
   
-  -  `composer.sequence(task_1, task_2, ...)` - runs a sequence of tasks
+     `composer.sequence(task_1, task_2, ...)`
   
-      > The input parameter object for the composition is the input parameter object of the first task in the sequence. The output parameter object of one task in the sequence is the input parameter object for the next task in the sequence.
+      > Runs a sequence of tasks where the output parameter from the 1st task in the sequence is the input parameter for the next task.
 
-  - `composer.retain(task)` - a parameter retention function 
+     `composer.retain(task)`
   
-      >`retain` produces an output with two fields: `params` and `result` where `params` is the input parameter of the composition and `result` is the output of `task`.
+      > The `retain` call is a parameter retention function that produces an output with two fields: `params` and `result` where `params` is the input parameter of the composition and `result` is the output of `task`.
   
-4. Using the Adobe I/O Runtime Shell, preview the current session flow for exercise 1 with the following command to help visualize the app starting point:
+4. Using the Adobe I/O Runtime Shell, preview the exercise 1 composition with the following command to help visualize the app starting point:
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 

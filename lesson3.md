@@ -1,12 +1,12 @@
 ---
 layout: module
-title: Lesson 3&#58; Adobe Console Integration
+title: Adobe Console Integration
 ---
 
 ## Overview
 The Adobe I/O Console provides the definitive destination for any developer looking to engage with and integrate Adobe cloud, mobile, and web technologies.
 
-## Adobe Console Integration Setup
+## Setup
 
 1. Open your browser to the [Adobe I/O Console](https://console.adobe.io) and login with your pre-defined CC id and pw.
 
@@ -30,7 +30,6 @@ The Adobe I/O Console provides the definitive destination for any developer look
 
    ![](images/cc-folder-create.png)
 
-     
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

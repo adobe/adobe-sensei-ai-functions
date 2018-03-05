@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Lesson 2&#58; Adobe I/O Runtime Shell
+title: Adobe I/O Runtime Shell
 ---
 
 ## Overview
@@ -16,7 +16,7 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
    ![](images/auth-namespace.png)
 
-## Exercises
+## Learning Exercises
 1. Using the Runtime Shell, create a new `app` (aka: `composition`) based on the built-in `hello.js` demo using the following command:
 
        app create hello-app @demos/hello.js
@@ -29,7 +29,8 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
        app preview @demos/if.js
 
-  ![](images/if-flow.png)  
+    ![](images/if-flow.png)
+
 4. Take a moment to click on the **CODE** tab and notice how it uses the `authenticate` action as the condition, and takes the `welcome` or `login` action path depending on the result returned.
 
     composer.if(

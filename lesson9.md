@@ -1,12 +1,12 @@
 ---
 layout: module
-title: Lesson 9&#58; Sensei Auto Tag & AEM Update Tags
+title: Exercise 5&#58; Sensei Auto Tag (plus AEM Update Tags)
 ---
 
 ## Overview
 In this exercise you will add the Sensei Auto Tag function to ... and use the AEM Update Tags action to update the tags for the image in AEM.
 
-## Exercises
+## Steps
 1. In VS Code, open `exercises/exercise-5/composition.js`. 
 
 <!--Solution:

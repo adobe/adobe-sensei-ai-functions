@@ -1,11 +1,11 @@
 ---
 layout: module
-title: Lesson 1&#58; Demo & Overview
+title: Demo & Overview
 ---
 
 ## Demo
 
-- Demo the workflow (Dawn 15 mins on demo/Adobe Sensei functions)
+Demo the workflow (Dawn 15 mins on demo/Adobe Sensei functions)
 
 ![](images/sensei-workflow.png)
 

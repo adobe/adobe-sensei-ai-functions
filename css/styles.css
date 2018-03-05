@@ -86,10 +86,11 @@ blockquote {
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid transparent;
-    border-radius: 4px;
+    border-radius: 6px;
     /*color: #31708f;*/
-    color: #CCC;
-    background-color: #29558f;
+    color: #323232;
+    background-color: #CCE9F9;
+    /*background-color: #29558f;*/
      /*#29558f;*/
     
     /*background-color: #3550D9;*/

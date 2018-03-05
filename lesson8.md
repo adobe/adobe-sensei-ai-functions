@@ -1,12 +1,12 @@
 ---
 layout: module
-title: Lesson 8&#58; Sensei Auto Swatch & AEM Copy/Crop 
+title: Exercise 4&#58; Sensei Auto Swatch (plus AEM Copy/Crop)
 ---
 
 ## Overview
 In this exercise you will add the Sensei Auto Swatch function to ... and use the AEM action to crop and copy it into AEM.
 
-## Exercises
+## Steps
 1. In VS Code, open `exercises/exercise-4/composition.js`. 
 
 <!--Solution:

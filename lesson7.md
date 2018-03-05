@@ -1,12 +1,12 @@
 ---
 layout: module
-title: Lesson 7&#58; Sensei Body Crop
+title: Exercise 3&#58; Sensei Body Crop
 ---
 
 ## Overview
 In this exercise you will add the Sensei Body Crop function to 
 
-## Exercises
+## Steps
 1. In VS Code, open `exercises/exercise-3/composition.js`. 
 
 
