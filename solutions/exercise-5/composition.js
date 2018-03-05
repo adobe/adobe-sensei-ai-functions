@@ -124,7 +124,7 @@ composer.sequence(
        */
       '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop',
       /**
-       * TODO: Autotag the image invoking '/sensei/1.0/sensei-autotag' action.
+       * Autotag the image invoking '/sensei/1.0/sensei-autotag' action.
        */
       composer.retain(
         composer.sequence(
@@ -140,8 +140,7 @@ composer.sequence(
       /* grab autotag results */
       ({result, params}) => Object.assign({}, result, params),
       /**
-       * TODO: Update the tags in AEM Assets
-       *  by invoking '/adobe/acp-assets-0.5.0/aem-update-tags'
+       * Update the tags in AEM Assets by invoking '/adobe/acp-assets-0.5.0/aem-update-tags'
        */
       '/adobe/acp-assets-0.5.0/aem-update-tags',
       /**

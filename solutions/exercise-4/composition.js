@@ -119,7 +119,8 @@ composer.sequence(
       ),
       /* grab autoswatch results */
       ({result, params}) => Object.assign({}, result, params),
-      /** Copy asset to AEM 
+      /** 
+       *  Copy asset to AEM 
        *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
        */
       '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop'

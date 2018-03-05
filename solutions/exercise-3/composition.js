@@ -89,7 +89,7 @@ composer.sequence(
      */
     composer.sequence(
       /**
-       * TODO: Use the action '/sensei/1.0/sensei-bodycrop' to crop the body.
+       * Use the action '/sensei/1.0/sensei-bodycrop' to crop the body.
        */
       composer.retain(
         composer.sequence(

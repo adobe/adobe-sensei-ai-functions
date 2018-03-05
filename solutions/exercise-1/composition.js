@@ -61,6 +61,8 @@ composer.sequence(
         }
       }
     }, params),
+    /* Invoke the /sensei/1.0/sensei-imagequality action
+     * passing the imageObject as parameter */
     composer.retain(
       composer.sequence(
         params => ({
