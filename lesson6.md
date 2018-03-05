@@ -7,13 +7,13 @@ title: Lesson 6&#58; Manual Upload Path
 In this exercise you will add an action to be used for uploading an asset to the creative cloud manually when a certain quality value is not met.
 
 ## Exercises
-1. In VS Code, open `exercises/exercise-2`. 
+1. In VS Code, open `exercises/exercise-2/composition.js`. 
 
-2. Add an action to check the image quality from the previous step, and if quality is not met, upload it to the Creative Cloud manually using the `/adobe/acp-assets-0.5.0/cc-upload-manual` action.
+2. Locate the `TODO` comment block and code an action to check the image quality value from the previous step. If the quality is not met, upload it to the Creative Cloud manually using the `/adobe/acp-assets-0.5.0/cc-upload-manual` action.
 
-   > HINT: You can check the `scores.quality` value off the `params` to determine the quality. 
+   > HINT: You can check the `scores.quality` value off the `params` to determine the quality.
    
-   Once again, begin coding at the TODO block ```/**
+   <!-- 
     * TODO: check the image quality. If quality is not met, upload
     * the asset into a folder invoking the '/adobe/acp-assets-0.5.0/cc-upload-manual' action.
     * Use composer.if( <condition>, <then>, <else>) construct.
@@ -21,7 +21,7 @@ In this exercise you will add an action to be used for uploading an asset to the
     * (params) => params
      */```
 
-     <!-- SOLUTION
+     SOLUTION
       composer.if(
         params => params.scores.quality > 0.64,
         /* if quality is met, process the image and upload to AEM */
@@ -33,17 +33,17 @@ In this exercise you will add an action to be used for uploading an asset to the
 ## Try it!
 1. First preview your composition again to ensure your new changes are shown:
 
-    app preview ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
+       app preview ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
 
 2. Next update the current `asset_created_composition` app with your new version:
 
-    app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
+       app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-2/composition.js
 
 3. Now open the browser to your Creative Cloud folder previously created again and trigger an `asset_created` event by uploading the `~/adobe-sensei-ai-functions/images/exercise-2.png` image into it.
 
 5. Switch back to the Adobe I/O Runtime Shell and type:
 
-      session list
+       session list
 
 6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
 

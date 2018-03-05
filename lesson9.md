@@ -7,9 +7,9 @@ title: Lesson 9&#58; Sensei Auto Tag & AEM Update Tags
 In this exercise you will add the Sensei Auto Tag function to ... and use the AEM Update Tags action to update the tags for the image in AEM.
 
 ## Exercises
-1. In VS Code, open `exercises/exercise-5`. 
+1. In VS Code, open `exercises/exercise-5/composition.js`. 
 
-Solution:
+<!--Solution:
      /**
        * TODO: Autotag the image invoking '/sensei/1.0/sensei-autotag' action.
        */
@@ -35,22 +35,23 @@ Solution:
        * Return the result as-is
        */
       result => result
-    ),
+    ),-->
 
 ## Try it!
+
 1. First preview your composition again to ensure your new changes are shown:
 
-    app preview ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js
+       app preview ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js
 
 2. Next update the current `asset_created_composition` app with your new version:
 
-    app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js
+       app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-5/composition.js
 
 3. Now open the browser to your Creative Cloud folder previously created again and trigger an `asset_created` event by uploading the `~/adobe-sensei-ai-functions/images/exercise-5.png` image into it.
 
 5. Switch back to the Adobe I/O Runtime Shell and type:
 
-      session list
+       session list
 
 6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
 
@@ -58,7 +59,7 @@ Solution:
 
     AEM instance: `http://52.151.23.3:4502/`
     userid: `labadmin`
-    pw: `jumpyice54!!`
+    pw: `jumpyice54!!
     
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

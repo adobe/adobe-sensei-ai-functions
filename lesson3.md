@@ -26,11 +26,11 @@ The Adobe I/O Console provides the definitive destination for any developer look
 
 1. Once logged in, look for the **Creative Cloud Files** link under **Assets** and click on it.
 
-1. **IMPORTANT** Before moving on, you must create your own personal folder to be used throughout this workshop. On the top right, click on the Actions arrow and choose to Create Folder from the options.
+1. **IMPORTANT:** Before moving on, you must create your own personal folder to be used throughout this workshop. On the top right, click on the **Actions** arrow and choose **Create Folder** from the options. Name it `sensei-lab-x` where `x` is your assigned lab user number.
 
-  ![](images/cc-folder-create.png)
+   ![](images/cc-folder-create.png)
 
-   Name it `sensei-lab-x` where x is your assigned lab user number.
+     
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

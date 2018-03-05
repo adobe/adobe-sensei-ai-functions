@@ -7,17 +7,17 @@ title: Lesson 7&#58; Sensei Body Crop
 In this exercise you will add the Sensei Body Crop function to 
 
 ## Exercises
-1. In VS Code, open `exercises/exercise-3`. 
+1. In VS Code, open `exercises/exercise-3/composition.js`. 
 
 
 ## Try it!
 1. First preview your composition again to ensure your new changes are shown:
 
-    app preview ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
+     app preview ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
 
 2. Next update the current `asset_created_composition` app with your new version:
 
-    app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
+     app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-3/composition.js
 
 3. Now open the browser to your Creative Cloud folder previously created again and trigger an `asset_created` event by uploading the `~/adobe-sensei-ai-functions/images/exercise-3.png` image into it.
 
