@@ -33,13 +33,13 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
 4. Take a moment to click on the **CODE** tab and notice how it uses the `authenticate` action as the condition, and takes the `welcome` or `login` action path depending on the result returned.
 
-    composer.if(
-      /* cond */
-      'authenticate',
-      /* then */
-      'welcome',
-      /* else */
-      'login')
+        composer.if(
+        /* cond */
+        'authenticate',
+        /* then */
+        'welcome',
+        /* else */
+        'login')
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

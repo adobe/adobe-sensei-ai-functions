@@ -5,7 +5,7 @@ title:  Adobe Sensei functions
 
 ## What You Will Learn
 
-In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, I/O platform and Adobe Sensei functions. Adobe Sensei functions enable the enterprise and partners to consume, compose and extend Adobe Sensei. 
+In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, I/O platform and Adobe Sensei functions. Adobe Sensei functions enable the enterprise and partners to consume, compose and extend Adobe Sensei.
 
 ### Technology Used
 - [Apache OpenWhisk](https://openwhisk.apache.org/)

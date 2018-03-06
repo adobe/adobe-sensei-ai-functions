@@ -4,10 +4,17 @@ title: Exercise 4&#58; Sensei Auto Swatch (plus AEM Copy/Crop)
 ---
 
 ## Overview
-In this exercise you will add the Sensei Auto Swatch function to ... and use the AEM action to crop and copy it into AEM.
+In this exercise you will add the Sensei Auto Swatch function to automatically extract color swatches from your image, then call an AEM action that will copy and crop the asset for AEM.
 
 ## Steps
-1. In VS Code, open `exercises/exercise-4/composition.js`. 
+1. In Visual Studio Code, open the `exercises/exercise-4/composition.js` file.
+2. Just after the `TODO` block, add code to invoke the `/sensei/1.0/sensei-autoswatch` action to crop the body of the image. The parameters you'll need to pass are:
+
+    - `image` - the image object to use for swatches
+    - `results` - max number of swatches to return
+    - `size` - size of the swatch (or 0)
+  
+    Use the same `composer` constructs used for `sensei-imagequality` and be sure to grab the results.
 
 <!--Solution:
      /**

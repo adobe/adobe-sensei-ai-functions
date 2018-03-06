@@ -4,7 +4,7 @@ title: Exercise 1&#58; Sensei Image Quality
 ---
 
 ## Overview
-In this exercise you will use the Adobe Sensei Image Quality function to retrieve an image aesthetic score.
+In this exercise you will use the Adobe Sensei Image Quality function to retrieve aesthetic scores for an image including an overall quality score.
 
 ## Steps
 1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
@@ -25,10 +25,16 @@ In this exercise you will use the Adobe Sensei Image Quality function to retriev
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
+5. Go back into Visual Studio Code and open the `exercises/exercise-1/composition.js` file. Locate the `TODO` block comment and add a call to the Sensei Image Quality function, which is defined using an action name of `/sensei/1.0/sensei-imagequality`. You'll want to use the constructs explained at the beginning of this lesson and be sure to retain the result. The only parameter required for this function is:
 
-5. Go back into Visual Studio Code and open `exercises/exercise-1/composition.js`. Locate the `TODO` block comment and add a call to the Sensei Image Quality function, which is defined using an action name of `/sensei/1.0/sensei-imagequality`. You'll need to pass in the `imageObject` parameter for `image` and retain the results.
+      `image` - the image to check for quality
 
-     <!-- SOLUTION
+    > **HINT:** Remember, the base composition code provided initially already extracted the auth token and image from the `asset_created` event and retained them for further access.
+
+
+<!--You'll need to pass in the `imageObject` from the `params` for the value of `image` and retain the results.
+
+     SOLUTION
      composer.retain(
       composer.sequence(
         params => ({

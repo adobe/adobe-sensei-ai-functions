@@ -7,11 +7,11 @@ title: Exercise 2&#58; CC Manual Upload
 In this exercise you will add an action to be used for uploading an asset to the creative cloud manually when a certain quality value is not met.
 
 ## Steps
-1. In VS Code, open `exercises/exercise-2/composition.js`. 
+1. In Visual Studio Code, open `exercises/exercise-2/composition.js`. 
 
-2. Locate the `TODO` comment block and code an action to check the image quality value from the previous step. If the quality is not met, upload it to the Creative Cloud manually using the `/adobe/acp-assets-0.5.0/cc-upload-manual` action.
-
-   > HINT: You can check the `scores.quality` value off the `params` to determine the quality.
+2. Locate the `TODO` comment block and code an action to check the `quality` score returned for an image and if it's not what you expect, upload it to the Creative Cloud manually using the `/adobe/acp-assets-0.5.0/cc-upload-manual` action. Use the `composer.if( <condition>, <then>, <else>)` construct.
+    
+   > **HINT:** Look back at the results of running this action in the previous exercise to find how to check the `quality` score returned for an image.
    
    <!-- 
     * TODO: check the image quality. If quality is not met, upload

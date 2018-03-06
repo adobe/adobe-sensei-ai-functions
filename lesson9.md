@@ -4,10 +4,15 @@ title: Exercise 5&#58; Sensei Auto Tag (plus AEM Update Tags)
 ---
 
 ## Overview
-In this exercise you will add the Sensei Auto Tag function to ... and use the AEM Update Tags action to update the tags for the image in AEM.
+In this exercise you will add the Sensei Auto Tag function to auto tag an image followed by the AEM Update Tags action to update the tags for the image in AEM.
 
 ## Steps
-1. In VS Code, open `exercises/exercise-5/composition.js`. 
+1. In Visual Studio Code, open the `exercises/exercise-5/composition.js` file. 
+2. Just after the `TODO` block, begin adding code to call the `/sensei/1.0/sensei-autotag` function to predict and automatically tag the provided image. The parameters you'll need to pass are:
+
+    - `image` - the image object to use for swatches
+    - `confidence` - level of confidence from 0-1 where 1 is the highest confidence
+    - `results` - number of tags to return
 
 <!--Solution:
      /**
