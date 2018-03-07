@@ -24,7 +24,7 @@ The Adobe I/O Console provides the definitive destination for any developer look
 
    > Don't worry if you did not receive the pop-up, it may have been run already in a previous lab.
 
-1. Once logged in, look for the **Creative Cloud Files** link under **Assets** and click on it.
+1. Once logged in, look for the **Creative Cloud Files** or **Files** link under **Assets** and click on it.
 
 1. **IMPORTANT:** Before moving on, you must create your own personal folder to be used throughout this workshop. On the top right, click on the **Actions** arrow and choose **Create Folder** from the options. Name it `sensei-lab-x` where `x` is your assigned lab user number.
 
