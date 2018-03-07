@@ -19,7 +19,7 @@ Understand how your Adobe I/O integration is configured with a webhook to respon
 
    For instance, if the URL was `https://runtime.adobe.io/api/v1/web/sensei-lab-1/acp-events/asset_created_composition_handler` you would run the following command:
 
-        action get /sensei-lab-1/acp-events/asset_created_composition_handler
+        action get acp-events/asset_created_composition_handler
 
     In the result you should see a SEQUENCE action with the name of `asset_created_composition_handler` in package `acp-events`.
 
