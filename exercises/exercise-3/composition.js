@@ -95,11 +95,6 @@ composer.sequence(
        *   composer.sequence( ...)
        * )
        */      
-      /* grab bodycrop results */
-      ({result, params}) => Object.assign({},
-        { crops: result },
-        params
-      )
     ),
     /* if quality is NOT met, copy asset to manual process folder in CC */
    '/adobe/acp-assets-0.5.0/cc-upload-manual')

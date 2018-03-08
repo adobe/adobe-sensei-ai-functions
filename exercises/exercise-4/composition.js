@@ -108,9 +108,6 @@ composer.sequence(
        * TODO: Invoke '/sensei/1.0/sensei-autoswatch'
        */
       
-      /* grab autoswatch results */
-      ({result, params}) => Object.assign({}, result, params),
-      
       /** TODO: Copy asset to AEM 
        *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
        */

@@ -127,8 +127,6 @@ composer.sequence(
        * TODO: Autotag the image invoking '/sensei/1.0/sensei-autotag' action.
        */
       
-      /* grab autotag results */
-      ({result, params}) => Object.assign({}, result, params),
       /**
        * TODO: Update the tags in AEM Assets
        *  by invoking '/adobe/acp-assets-0.5.0/aem-update-tags'
