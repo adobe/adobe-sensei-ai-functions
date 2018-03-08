@@ -131,11 +131,7 @@ composer.sequence(
        * TODO: Update the tags in AEM Assets
        *  by invoking '/adobe/acp-assets-0.5.0/aem-update-tags'
        */
-      
-      /**
-       * Return the result as-is
-       */
-      result => result
+            
     ),
     /* if quality is NOT met, copy asset to manual process folder in CC */
    '/adobe/acp-assets-0.5.0/cc-upload-manual')
