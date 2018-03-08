@@ -62,11 +62,19 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
 
        session list
 
-5. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
+5. Locate the most recent `asset_created_composition` running and click on the session id to view the result. If you scroll down in the results JSON you should see the tags that were generated like shown in the session below:
 
-6. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). When you locate the file uploaded into AEM, click on the circled i button to view the info for it and check for the existence of tags. One of them should say `created with io runtime`. 
+      ![](images/tags-results.png)
 
-   > Use the AEM host and credentials provided to login and check AEM for the file.
+6. If the app ran successfully then you will see the asset copied into an AEM instance within the same folder name as you defined in your Creative Cloud instance. 
+
+    > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
+
+    Once you locate the file uploaded into AEM, either hover over it and click the circled **i** button (or click into it and click on **Properties**) to view the details and check for the existence of tags. One of them should say `created with io runtime` as shown below:
+
+      ![](images/aem-tags.png)
+
+   
 
     
 <div class="row" style="margin-top:40px;">

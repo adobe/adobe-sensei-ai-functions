@@ -61,7 +61,7 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
 
 7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). 
 
-    > To check AEM, log in with the host and credentials provided.
+    > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
