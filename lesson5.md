@@ -23,7 +23,7 @@ In this exercise you will use the Adobe Sensei Image Quality action to retrieve 
   
 4. Using the Adobe I/O Runtime Shell, preview the exercise 1 composition with the following command to help visualize the app starting point:
 
-       app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
+       app preview ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
 5. Go back into Visual Studio Code and open the `exercises/exercise-1/composition.js` file. Locate the `TODO` comment block and add the code below:
 
