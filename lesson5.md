@@ -21,7 +21,7 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
   
       > The `retain` call is a parameter retention function that produces an output with two fields: `params` and `result` where `params` is the input parameter of the composition and `result` is the output of `task`.
   
-4. Before editing any code, go back into the **Adobe I/O Runtime Shell** application and preview the base composition code visualization with the following command:
+4. Before editing any code, go back into the **Adobe I/O Runtime Shell** application and preview the base composition flow with the following command:
 
        app preview ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
@@ -49,11 +49,13 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
     2. Retain the result received from running the action for further use
 
 ## Try it!
-1. Preview your updated composition code first to view the flow with your changes. Make sure it contains the `sensei-imagequality` action in the visualization as shown below before moving on:
+1. Switch back into the **Adobe I/O Runtime Shell** and preview your updated composition flow with your changes. Make sure it contains the `sensei-imagequality` action in the visualization as shown below before moving on:
 
        app preview ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
     ![](images/exercise1-flow.png)
+
+    > Your visualization will automatically update to preview your latest version if you had it running while making your code edits. 
 
 2. Deploy the `asset_created_composition` with your updated version:
 
@@ -87,7 +89,7 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
    - **Rule of Thirds** - https://en.wikipedia.org/wiki/Rule_of_thirds
    - **Vivid Color** -	Saturation of color and visual reception
 
-2. Next, click on the **SESSION FLOW** tab. If your code ran successfully, you should see something similar to below, where all actions completed successfully and are denoted in green:
+2. Next, click on the **SESSION FLOW** tab. If your code ran successfully you should see something similar to below, where all actions completed successfully and are denoted in green:
 
     ![](images/exercise1-run.png)
 
