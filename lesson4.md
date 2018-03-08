@@ -4,7 +4,7 @@ title: Event Handler Webhook Definition
 ---
 
 ## Overview
-Understand how your Adobe I/O integration is configured with a webhook to respond to **Creative Cloud _Asset Created_** events.
+Understand how your Adobe I/O integration is configured with a webhook action to respond to **Creative Cloud _Asset Created_** events.
 
 ## Steps
 1. Go back to the [Adobe I/O Console](https://console.adobe.io), ensure the **Integrations** tab is selected and click on your pre-defined integration again (ie: `Sensei lab X` - where X is your assigned lab #).
@@ -13,7 +13,7 @@ Understand how your Adobe I/O integration is configured with a webhook to respon
 
     ![](images/webhook-details.png)
 
-    > Notice the items outlined in red in the screenshot. These two fields define a URL endpoint event handler to be invoked any time a Creative Cloud Asset Created event occurs.
+    > Notice the items outlined in red above. These two fields define a URL endpoint event handler to be invoked any time a Creative Cloud Asset Created event occurs.
 
 3. The URL defined for the webhook event handler points to a pre-defined `action` you could now view in the Adobe I/O Runtime Shell. Switch back to the Adobe I/O Runtime Shell and use the `action get` command followed by your specific `namespace/package/handler` from the URL directly following the `https://runtime.adobe.io/api/v1/web` portion of the URL:
 

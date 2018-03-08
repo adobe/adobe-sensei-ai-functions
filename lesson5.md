@@ -27,7 +27,7 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
 
     ![](images/exercise1-base-flow.png)
 
-5. Now switch back into your editor where the `exercises/exercise-1/composition.js` file is open and locate the `TODO` comment block to add the following:
+5. Now switch back into your editor where the `exercises/exercise-1/composition.js` file is open, locate the `TODO` comment block and add the following:
 
        /* TODO: Invoke the /sensei/1.0/sensei-imagequality action
         * passing the imageObject as parameter */
@@ -55,13 +55,13 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
 
     ![](images/exercise1-flow.png)
 
-    > Your visualization will automatically update to preview your latest version if you had it running while making your code edits. 
+    > **NOTE:** Your visualization will automatically update to preview your latest version if you had it running while making your code edits.
 
 2. Deploy the `asset_created_composition` with your updated version:
 
        app update asset_created_composition ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
-1. Now go back to the browser where your Creative Cloud instance is open and navigate into the new folder you created previously (**sensei-lab-1** for instance).
+1. Now go back to the browser where your Creative Cloud instance is open and navigate into the new folder you created previously (ie: **sensei-lab-1**).
 
 1. Drag and drop (or upload) an image from your workstation into your Creative Cloud folder to trigger an `asset_created` event.
 
