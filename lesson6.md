@@ -12,7 +12,7 @@ In this exercise you will add code to check the quality score received from the 
 2. Locate the `TODO` comment block and add the following snippet:
 
         /* TODO: ... */
-        ,composer.if(
+        composer.if(
           params => params.scores.quality > 0.64,
           /* if quality is met, process the image and upload to AEM */
           (params) => params,
@@ -32,9 +32,9 @@ In this exercise you will add code to check the quality score received from the 
 
        app update asset_created_composition ~/adobe-sensei-actions-lab/exercises/exercise-2/composition.js
 
-3. Open the browser to your Creative Cloud instance and trigger the `Asset Created` event by uploading a low quality image into it. One has been included for you to use by the name of `~/adobe-sensei-actions-lab/images/quality-fail.png`.
+3. Open the browser to your Creative Cloud instance and trigger the `asset_created` event by uploading a low quality image into it. One has been included for you within the projects `~/adobe-sensei-actions-lab/stock-photos` folder by the name of `quality-fail.png`.
 
-5. Switch back to the Adobe I/O Runtime Shell to find your session:
+5. Switch back to the **Adobe I/O Runtime Shell** to find your session:
 
        session list
 

@@ -11,8 +11,8 @@ In this exercise you will use the **Sensei Body Crop** action to identify refere
 2. Just after the `TODO` block, add the code snippet below to invoke the `/sensei/1.0/sensei-bodycrop` action. The code will pass in the `image` object and save the result in a `crops` object. The result will contain the constraints recommended for cropping out the body of the image.
  
         /**
-        *  TODO: Use the action '/sensei/1.0/sensei-bodycrop' to crop the body.
-        */
+         *  TODO: Use the action '/sensei/1.0/sensei-bodycrop' to crop the body.
+         */
         composer.retain(
             composer.sequence(
                 params => ({
@@ -25,7 +25,7 @@ In this exercise you will use the **Sensei Body Crop** action to identify refere
         ({result, params}) => Object.assign({},
             { crops: result },
             params
-        ),
+        )
 
 ## Try it!
 1. First, preview your composition to ensure it contains the `sensei-bodycrop` action:
@@ -38,7 +38,7 @@ In this exercise you will use the **Sensei Body Crop** action to identify refere
 
        app update asset_created_composition ~/adobe-sensei-actions-lab/exercises/exercise-3/composition.js
 
-3. Now open the browser to your Creative Cloud folder and upload a new image to trigger an `asset_created`.
+3. Now open the browser to your Creative Cloud folder and upload a new image to trigger an `asset_created` event.
 
 5. Switch back to the **Adobe I/O Runtime Shell** and type:
 

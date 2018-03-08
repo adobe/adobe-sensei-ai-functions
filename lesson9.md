@@ -50,7 +50,7 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
 
        app preview ~/adobe-sensei-actions-lab/exercises/exercise-5/composition.js
 
-      ![](images/exercise5-flow.png)
+      ![](images/exercise5-flowb.png)
 
 2. Next, update the current `asset_created_composition` with your new version:
 
@@ -58,13 +58,15 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
 
 3. Now open the browser to your Creative Cloud and upload an image to trigger an `asset_created` event.
 
-4. Switch back to the Adobe I/O Runtime Shell and type:
+4. Switch back to the **Adobe I/O Runtime Shell** and type:
 
        session list
 
 5. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
 
-6. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). To check AEM, log in with the host and credentials provided.
+6. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). When you locate the file uploaded into AEM, click on the circled i button to view the info for it and check for the existence of tags. One of them should say `created with io runtime`. 
+
+   > Use the AEM host and credentials provided to login and check AEM for the file.
 
     
 <div class="row" style="margin-top:40px;">

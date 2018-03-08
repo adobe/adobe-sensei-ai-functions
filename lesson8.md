@@ -30,15 +30,14 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
           /* grab autoswatch results */
           ({result, params}) => Object.assign({}, result, params),
 
-
-3. Now that the image quality has been checked, the crop results returned and the swatches processed, the image is ready to be copied into AEM for final distribution. 
+3. Now that the image quality has been checked, the crop results returned and the swatches processed, the image is ready to be copied into AEM for final distribution.
 
     After the `sensei-autoswatch` results are returned, code the following action to perform the crop on the image and copy it into AEM:
 
           /** 
-          *  TODO: Copy asset to AEM 
-          *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
-          */
+           *  TODO: Copy asset to AEM 
+           *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
+           */
           '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop'
 
 ## Try it!
@@ -46,7 +45,7 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
 
        app preview ~/adobe-sensei-actions-lab/exercises/exercise-4/composition.js
 
-      ![](images/exercise4-flow.png)
+      ![](images/exercise4-flowb.png)
 
 2. Next, update the current `asset_created_composition` with your new version:
 
@@ -54,13 +53,15 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
 
 3. Now open the browser to your Creative Cloud and upload an image to trigger an `asset_created` event.
 
-5. Switch back to the Adobe I/O Runtime Shell and type:
+5. Switch back to the **Adobe I/O Runtime Shell** and type:
 
        session list
 
 6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
 
-7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). To check AEM, log in with the host and credentials provided.
+7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). 
+
+    > To check AEM, log in with the host and credentials provided.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
