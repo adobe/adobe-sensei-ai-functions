@@ -4,12 +4,12 @@ title: Exercise 1&#58; Sensei Image Quality
 ---
 
 ## Overview
-In this exercise you will use the Adobe Sensei Image Quality function to retrieve aesthetic scores for an image including an overall quality score.
+In this exercise you will use the Adobe Sensei Image Quality action to retrieve aesthetic scores for an image, including an overall quality score.
 
 ## Steps
 1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
 
-2. Go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-ai-functions`.
+2. Go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-actions-lab`.
 
 3. Begin by opening the `solutions/exercise-1/composition.js` file to learn about some specific concepts you'll need to understand for the remainder of the lab.
   
@@ -25,41 +25,38 @@ In this exercise you will use the Adobe Sensei Image Quality function to retriev
 
        app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
 
-5. Go back into Visual Studio Code and open the `exercises/exercise-1/composition.js` file. Locate the `TODO` block comment and add a call to the Sensei Image Quality function, which is defined using an action name of `/sensei/1.0/sensei-imagequality`. You'll want to use the constructs explained at the beginning of this lesson and be sure to retain the result. The only parameter required for this function is:
+5. Go back into Visual Studio Code and open the `exercises/exercise-1/composition.js` file. Locate the `TODO` comment block and add the code below:
 
-      `image` - the image to check for quality
+       /* TODO: Invoke the /sensei/1.0/sensei-imagequality action
+        * passing the imageObject as parameter */
+       composer.retain(
+         composer.sequence(
+           params => ({
+             "image": params.imageObject
+           }),
+         '/sensei/1.0/sensei-imagequality'
+         )
+       ),
+       /* grab image quality results */
+       ({result, params}) => Object.assign({}, result, params)
 
-    > **HINT:** Remember, the base composition code provided initially already extracted the auth token and image from the `asset_created` event and retained them for further access.
+    This code will invoke the `/sensei/1.0/sensei-imagequality` action with the `image` parameter set to the `imageObject` previously defined in the initial composition (that was extracted from the `asset_created_event`) and the result from the action is then retained for further use.
 
-
-<!--You'll need to pass in the `imageObject` from the `params` for the value of `image` and retain the results.
-
-     SOLUTION
-     composer.retain(
-      composer.sequence(
-        params => ({
-          "image": params.imageObject
-        }),
-      '/sensei/1.0/sensei-imagequality'
-      )
-    ),
-    /* grab image quality results */
-    ({result, params}) => Object.assign({}, result, params)-->
 
 ## Try it!
 1. Preview your composition code to ensure your new changes are shown:
 
-       app preview ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
+       app preview ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
     ![](images/exercise1-flow.png)
 
 2. Update the current `asset_created_composition` app with your new version:
 
-       app update asset_created_composition ~/adobe-sensei-ai-functions/exercises/exercise-1/composition.js
+       app update asset_created_composition ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
 
 1. Now go back to the Creative Cloud instance you're logged into in the browser and and navigate into the new folder you created previously (**sensei-lab-1** for instance).
 
-1. Drag and drop (or upload) an image from the workstation into the folder in Creative Cloud to trigger an `asset_created` event. There are images provided for you to use within the `~/adobe-sensei-ai-functions/images` folder.
+1. Drag and drop (or upload) an image from the workstation into the folder in Creative Cloud to trigger an `asset_created` event. There are images provided for you to use within the `~/adobe-sensei-actions-lab/images` folder.
 
 1. Switch back to the Adobe I/O Runtime Shell and run the `session list` command to list all of the current sessions:
 
