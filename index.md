@@ -16,7 +16,7 @@ The folder for the exercises and solutions have been pre-loaded on your workstat
 
 > If at any point you are stuck in an exercise, simply replace your version with the `composition.js` from the corresponding **_solutions_** folder.
 
-<!--- [Adobe Sensei Functions](https://github.com/apiplatform/adobe-sensei-actions-lab)-->
+<!--[Adobe Sensei Functions](https://github.com/apiplatform/adobe-sensei-actions-lab)-->
 
 ### Requirements & Dependencies
 - Visual Studio Code
@@ -48,7 +48,7 @@ The folder for the exercises and solutions have been pre-loaded on your workstat
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson1.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module1.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

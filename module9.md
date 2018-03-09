@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Exercise 5&#58; Sensei Auto Tag + AEM Update Tags
+title: Exercise 5&#58; Adobe Sensei Auto Tag + AEM Update Tags
 ---
 
 ## Overview
-In this exercise you will add the Sensei Auto Tag function to auto tag an image followed by the AEM Update Tags action to update the tags for the image in AEM.
+In this exercise you will add the **Adobe Sensei Auto Tag** function to auto tag an image followed by the AEM Update Tags action to update the tags for the image in AEM.
 
 ## Steps
 1. In Visual Studio Code, open the `exercises/exercise-5/composition.js` file. 
@@ -66,7 +66,7 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
 
       ![](images/tags-results.png)
 
-6. If the app ran successfully then you will see the asset copied into an AEM instance within the same folder name as you defined in your Creative Cloud instance. 
+6. If the app ran successfully then you will see the asset copied into an AEM instance within the same folder name as you defined in your Creative Cloud instance.
 
     > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
 

@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Exercise 3&#58; Sensei Body Crop
+title: Exercise 3&#58; Adobe Sensei Body Crop
 ---
 
 ## Overview
-In this exercise you will use the **Sensei Body Crop** action to identify reference points in the provided image to use for cropping out the body automatically.
+In this exercise you will use the **Adobe Sensei Body Crop** function to identify reference points in the provided image to use for cropping out the body automatically.
 
 ## Steps
 1. In Visual Studio Code, open `exercises/exercise-3/composition.js`. 
@@ -38,7 +38,7 @@ In this exercise you will use the **Sensei Body Crop** action to identify refere
 
        app update asset_created_composition ~/adobe-sensei-actions-lab/exercises/exercise-3/composition.js
 
-3. Now open the browser to your Creative Cloud folder and upload a new image to trigger an `asset_created` event.
+3. Now open the browser to your Creative Cloud folder and upload a new image to trigger an `asset_created` event. For instance, try `image2.png` from the `~/adobe-sensei-actions-lab/stock-photos` folder.
 
 5. Switch back to the **Adobe I/O Runtime Shell** and type:
 

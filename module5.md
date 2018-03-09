@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Exercise 1&#58; Sensei Image Quality
+title: Exercise 1&#58; Adobe Sensei Image Quality
 ---
 
 ## Overview
-In this exercise you will use the **Adobe Sensei Image Quality** action to retrieve aesthetic scores for an image, including an overall quality score.
+In this exercise you will use the **Adobe Sensei Image Quality** function to retrieve aesthetic scores for an image, including an overall quality score.
 
 ## Steps
 1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
@@ -65,7 +65,7 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
 
 1. Drag and drop (or upload) an image from your workstation into your Creative Cloud folder to trigger an `asset_created` event.
 
-    > **NOTE:** There are images provided for testing within your `~/adobe-sensei-actions-lab/images` folder.
+    > **NOTE:** There are images provided for testing within your `~/adobe-sensei-actions-lab/stock-photos` folder. For instance, drag and drop `image1.png` and look at the resulting quality scores.
 
 1. Switch back to the **Adobe I/O Runtime Shell** application and run the `session list` command to list all of the current sessions:
 

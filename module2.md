@@ -7,7 +7,7 @@ title: Adobe I/O Runtime Shell
 The Adobe I/O Runtime Shell is a graphical interface to help you visualize and debug your serverless functions and compositions with great ease. It has been pre-installed on your machine and you will use it throughout the workshop. Before using it however, you must authorize your namespace to give yourself your own sandbox to play in for the duration of this lab.
 
 ## Setup
-1. Open Finder on your Mac worksation and locate the **Adobe I/O Runtime Shell** application in the Applications folder.
+1. Locate the **Adobe I/O icon** ![](images/adobe-io2.jpg) in your application toolbar to open the **Adobe I/O Runtime Shell**.
 2. Authorize your designated Adobe I/O Runtime namespace based on the auth key provided for your userid by entering the following command:
 
         auth add your_namespace_key_goes_here
@@ -29,7 +29,7 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
        app preview @demos/if.js
 
- ![](images/if-flow.png)
+   ![](images/if-flow.png)
 
 4. Take a moment to click on the **CODE** tab and notice how it uses the `authenticate` *action* as the condition, and takes the `welcome` or `login` action path depending on the result returned.
 
