@@ -67,9 +67,11 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
 
     > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
 
-    Notice the images are now cropped to the body and a new folder has been created to hold the swatches prefixed with the image name:
+    Notice the images now have the face cropped out and a new folder has been created to hold the swatches for the image sized based on the sensei-swatch action results:
 
-  ![](images/swatch-folders.png)
+      ![](images/swatches-aem.png)
+
+      ![](images/swatch.png)
 
     
 

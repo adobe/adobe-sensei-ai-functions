@@ -78,6 +78,7 @@ In this exercise you will use the **Adobe Sensei Image Quality** action to retri
     ![](images/image-quality-scores.png)
 
 
+   - **Quality** - The overall score 
    - **Balancing Element** - How balanced the overall composition is
    - **Color Harmony** - How balanced the colors are
    - **Interesting Content** - Whether or not the image contains interesting content

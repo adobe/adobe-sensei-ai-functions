@@ -4,7 +4,7 @@ title: Exercise 2&#58; Manual Image Processing
 ---
 
 ## Overview
-In this exercise you will add code to check the quality score received from the previous Sensei Image Qualit action. When the quality score does not meet an accepted range, you will call an action to upload it back to Creative Cloud for manual processing.
+In this exercise you will add code to check the overall quality score received from the previous Sensei Image Quality action. When the quality score does not meet an acceptable range, you will call an action to upload it back to Creative Cloud for manual processing.
 
 ## Steps
 1. In Visual Studio Code, open the `exercises/exercise-2/composition.js` file. 
@@ -34,12 +34,21 @@ In this exercise you will add code to check the quality score received from the 
 
 3. Open the browser to your Creative Cloud instance and trigger the `asset_created` event by uploading a low quality image into it. One has been included for you within the projects `~/adobe-sensei-actions-lab/stock-photos` folder by the name of `quality-fail.png`.
 
-5. Switch back to the **Adobe I/O Runtime Shell** to find your session:
+5. Switch back to the **Adobe I/O Runtime Shell** to find your session by running the following command:
 
        session list
 
-6. Locate the most recent `asset_created_composition` running and click on the session id to view the result. When run successfully, the **SESSION FLOW** tab should show results like the screenshot below where the `cc-upload-manual` action executed quality score failure:
+6. Locate the most recent `asset_created_composition` running and click on the session id to view the result. When it was run successfully the **RESULTS** tab JSON will show the scores indicating the quality value is indeed less than **0.64**:
 
+      ![](images/quality-scores.png)
+
+    Also note how the **SESSION FLOW** tab at the bottom shows the path ended with the `cc-upload-manual` action:
+
+      ![](images/cc-upload-manual.png)
+
+7. Now go back into your Creative Cloud instance and you should see that a new folder was created called `manual` and contains the `quality-fail.png` file.
+
+      ![](images/manual-process.png)
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
