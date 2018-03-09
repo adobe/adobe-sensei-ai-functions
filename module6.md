@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Exercise 2&#58; Check Image for Quality Pass/Fail
+title: Exercise 2&#58; Manual Image Processing
 ---
 
 ## Overview
@@ -43,8 +43,8 @@ In this exercise you will add code to check the quality score received from the 
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson5.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="lesson7.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module5.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module7.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

@@ -4,7 +4,7 @@ title: Event Handler Webhook Definition
 ---
 
 ## Overview
-Understand how your Adobe I/O integration is configured with a webhook action to respond to **Creative Cloud _Asset Created_** events.
+Understand how your Adobe I/O integration is configured with a webhook action to respond to **Creative Cloud Asset Created** events.
 
 ## Steps
 1. Go back to the [Adobe I/O Console](https://console.adobe.io), ensure the **Integrations** tab is selected and click on your pre-defined integration again (ie: `Sensei lab X` - where X is your assigned lab #).
@@ -25,13 +25,13 @@ Understand how your Adobe I/O integration is configured with a webhook action to
 
     ![](images/asset_created_composition_handler.png)
 
-   > You can also list actions specific to a namespace/package and use a command like: `actions get /sensei-lab-x/acp-events/` with your assigned namespace/lab number.
+    > **NOTE:** You can also list actions specific to a namespace/package and use a command like: `actions get /sensei-lab-x/acp-events/` with your assigned namespace/lab number.
 
 5. Click on the **HANDLER** action defined within the `asset_created_composition_handler` and take a look at the code definition briefly to see more details on how this handler works.
 
    An example of the log output from an invocation of this handler is shown below for reference:
 
-    ![](images/handler-log-example.png)
+     ![](images/handler-log-example.png)
 
 6. Before leaving the Adobe I/O Runtime Shell, execute the `action get /sensei/1.0/` command to view the names of the Adobe Sensei functions currently defined in your namespace. You should see a list like the following. These actions will be used throughout the rest of the exercises to add specific Adobe Sensei functions.
 
@@ -63,8 +63,8 @@ Understand how your Adobe I/O integration is configured with a webhook action to
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson3.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="lesson5.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module3.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module5.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

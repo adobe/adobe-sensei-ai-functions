@@ -16,13 +16,13 @@ The Adobe I/O Console provides the definitive destination for any developer look
 
      ![](images/console-redirect.png)
 
-   > This URL will be different for each user so make sure you locate the one for your specific user number.
+   > **NOTE:** This URL will be different for each user so make sure you locate the one for your specific user number.
 
 1. Open the URL copied from the **Default redirect URI** in the previous step to authorize your app to access your Creative Cloud files. When it is run the first time, you will receive a pop-up like below, where you should click on the **Allow Access** button. You will then be re-routed to the Adobe Creative Cloud site where you can login with the Creative Cloud userid/pw provided to you for the lab.
 
     ![](images/authorize-app.png)
 
-   > Don't worry if you did not receive the pop-up, it may have been run already in a previous lab.
+   > **NOTE:** Don't worry if you did not receive the pop-up, it may have been run already in a previous lab.
 
 1. Once logged in, look for the **Creative Cloud Files** or **Files** link under **Assets** and click on it.
 
@@ -33,8 +33,8 @@ The Adobe I/O Console provides the definitive destination for any developer look
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson2.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="lesson4.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module2.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module4.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

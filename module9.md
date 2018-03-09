@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Exercise 5&#58; Sensei Auto Tag (plus AEM Update Tags)
+title: Exercise 5&#58; Sensei Auto Tag + AEM Update Tags
 ---
 
 ## Overview
@@ -70,7 +70,7 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
 
     > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
 
-    Once you locate the file uploaded into AEM, either hover over it and click the circled **i** button (or click into it and click on **Properties**) to view the details and check for the existence of tags. One of them should say `created with io runtime` as shown below:
+    Once you locate the file in AEM, either hover over it and click the circled **i** button (or click into it and click on **Properties**) to view the details and check for the existence of tags. One of them should say `created with io runtime` as shown below:
 
       ![](images/aem-tags.png)
 
@@ -79,6 +79,6 @@ In this exercise you will add the Sensei Auto Tag function to auto tag an image 
     
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson8.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module8.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
 </div>
 </div>

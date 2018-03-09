@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Exercise 4&#58; Sensei Auto Swatch (plus AEM Copy/Crop)
+title: Exercise 4&#58; Sensei Auto Swatch + AEM Copy/Crop
 ---
 
 ## Overview
-In this exercise you will add the Sensei Auto Swatch function to automatically extract color swatches from your image, then call an AEM action that will copy and crop the asset for AEM.
+In this exercise you will add the Sensei Auto Swatch function to automatically extract color swatches from your image, then call an AEM action that will crop and create swatches from your image, then copy them into AEM.
 
 ## Steps
 1. In Visual Studio Code, open the `exercises/exercise-4/composition.js` file.
@@ -30,15 +30,17 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
           /* grab autoswatch results */
           ({result, params}) => Object.assign({}, result, params),
 
-3. Now that the image quality has been checked, the crop results returned and the swatches processed, the image is ready to be copied into AEM for final distribution.
+3. Now that the image quality has been checked and the crop and swatch results returned, the image is ready to be copied into AEM for final distribution.
 
-    After the `sensei-autoswatch` results are returned, code the following action to perform the crop on the image and copy it into AEM:
+    After the `sensei-autoswatch` results are returned, code the following action to perform the crops on the image and copy it into AEM:
 
           /** 
            *  TODO: Copy asset to AEM 
            *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
            */
           '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop'
+
+    > **NOTE:** This action will also perform the actual cropping and swatch creation from the image prior to copying to AEM.
 
 ## Try it!
 1. First, preview your composition again to ensure your new changes are shown:
@@ -57,16 +59,24 @@ In this exercise you will add the Sensei Auto Swatch function to automatically e
 
        session list
 
-6. Locate the most recent `asset_created_composition` running and click on the session id to view the result.
+6. Locate the most recent `asset_created_composition` running and click on the session id to view the result. If you scroll down in the results JSON you should see the swatch results that were generated like shown in the session below:
 
-7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud). 
+      ![](images/swatch-results.png)
+
+7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud).
 
     > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
 
+    Notice the images are now cropped to the body and a new folder has been created to hold the swatches prefixed with the image name:
+
+  ![](images/swatch-folders.png)
+
+    
+
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson7.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="lesson9.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module7.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module9.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>

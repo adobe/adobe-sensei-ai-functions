@@ -29,7 +29,7 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
        app preview @demos/if.js
 
-    ![](images/if-flow.png)
+ ![](images/if-flow.png)
 
 4. Take a moment to click on the **CODE** tab and notice how it uses the `authenticate` *action* as the condition, and takes the `welcome` or `login` action path depending on the result returned.
 
@@ -43,8 +43,8 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="lesson1.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="lesson3.html" class="btn btn-default pull-right">Next <i class="glyphicon
+<a href="module1.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="module3.html" class="btn btn-default pull-right">Next <i class="glyphicon
 glyphicon-chevron-right"></i></a>
 </div>
 </div>
