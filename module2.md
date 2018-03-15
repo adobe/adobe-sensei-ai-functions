@@ -2,6 +2,9 @@
 layout: module
 title: Adobe I/O Runtime Shell
 ---
+<!--
+# Adobe I/O Runtime Shell
+-->
 
 ## Overview
 The Adobe I/O Runtime Shell is a graphical interface to help you visualize and debug your serverless functions and compositions with great ease. It has been pre-installed on your machine and you will use it throughout the workshop. Before using it however, you must authorize your namespace to give yourself your own sandbox to play in for the duration of this lab.

@@ -1,10 +1,14 @@
 ---
 layout: module
-title: Exercise 4&#58; Adobe Sensei Auto Swatch + AEM Copy/Crop
+title: Exercise 4&#58; Adobe Sensei function 1&#58; auto swatch + Adobe Experience Manager Copy/Crop
 ---
 
+<!--
+# Exercise 4&#58; Adobe Sensei function: auto swatch + Adobe Experience Manager Copy/Crop
+-->
+
 ## Overview
-In this exercise you will add the **Adobe Sensei Auto Swatch** function to automatically extract color swatches from your image, then call an AEM action that will crop and create swatches from your image, then copy them into AEM.
+In this exercise you will add the **Adobe Sensei auto swatch** function to automatically extract color swatches from your image, then call an Adobe Experience Manager action that will crop and create swatches from your image, then copy them into Adobe Experience Manager.
 
 ## Steps
 1. In Visual Studio Code, open the `exercises/exercise-4/composition.js` file.
@@ -30,17 +34,17 @@ In this exercise you will add the **Adobe Sensei Auto Swatch** function to autom
           /* grab autoswatch results */
           ({result, params}) => Object.assign({}, result, params),
 
-3. Now that the image quality has been checked and the crop and swatch results returned, the image is ready to be copied into AEM for final distribution.
+3. Now that the image quality has been checked and the crop and swatch results returned, the image is ready to be copied into Adobe Experience Manager for final distribution.
 
-    After the `sensei-autoswatch` results are returned, code the following action to perform the crops on the image and copy it into AEM:
+    After the `sensei-autoswatch` results are returned, code the following action to perform the crops on the image and copy it into Adobe Experience Manager:
 
-          /** 
-           *  TODO: Copy asset to AEM 
+          /**
+           *  TODO: Copy asset to Adobe Experience Manager
            *  invoking '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop' action
            */
           '/adobe/acp-assets-0.5.0/aem-copy-asset-and-crop'
 
-    > **NOTE:** This action will also perform the actual cropping and swatch creation from the image prior to copying to AEM.
+    > **NOTE:** This action will also perform the actual cropping and swatch creation from the image prior to copying to Adobe Experience Manager.
 
 ## Try it!
 1. First, preview your composition again to ensure your new changes are shown:
@@ -65,7 +69,7 @@ In this exercise you will add the **Adobe Sensei Auto Swatch** function to autom
 
 7. If the app ran successfully then you will see the asset copied into an AEM instance (with the same folder name as you defined in the Creative Cloud).
 
-    > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
+    > **NOTE:** Use the Adobe Experience Manager host and credentials provided to login and check Adobe Experience Manager for the file.
 
     Notice the images now have the face cropped out and a new folder has been created to hold the swatches for the image sized based on the sensei-swatch action results:
 
@@ -73,7 +77,7 @@ In this exercise you will add the **Adobe Sensei Auto Swatch** function to autom
 
       ![](images/swatch.png)
 
-    
+
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

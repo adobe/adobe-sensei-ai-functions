@@ -1,13 +1,17 @@
 ---
 layout: module
-title: Exercise 5&#58; Adobe Sensei Auto Tag + AEM Update Tags
+title: Exercise 5&#58; Adobe Sensei function 1&#58; auto tag + Adobe Experience Manager Update Tags
 ---
 
+<!--
+# Exercise 5&#58; Adobe Sensei function: auto tag + Adobe Experience Manager Update Tags
+-->
+
 ## Overview
-In this exercise you will add the **Adobe Sensei Auto Tag** function to auto tag an image followed by the AEM Update Tags action to update the tags for the image in AEM.
+In this exercise you will add the **Adobe Sensei auto tag** function to auto tag an image followed by the Adobe Experience Manager Update Tags action to update the tags for the image in Adobe Experience Manager.
 
 ## Steps
-1. In Visual Studio Code, open the `exercises/exercise-5/composition.js` file. 
+1. In Visual Studio Code, open the `exercises/exercise-5/composition.js` file.
 2. Just after the `TODO` block, begin adding code to call the `/sensei/1.0/sensei-autotag` action to predict tags for the image. The parameters you'll need to pass are:
 
     - `image` - the image object to use for swatches
@@ -31,10 +35,10 @@ In this exercise you will add the **Adobe Sensei Auto Tag** function to auto tag
           /* grab autotag results */
           ({result, params}) => Object.assign({}, result, params),
 
-3. After the tags have been assigned, the image needs to be updated in AEM to include them. After the autotag result has been returned, add the following code to call an action to update the tags for the image in AEM:
+3. After the tags have been assigned, the image needs to be updated in Adobe Experience Manager to include them. After the autotag result has been returned, add the following code to call an action to update the tags for the image in Adobe Experience Manager:
 
             /**
-              * TODO: Update the tags in AEM Assets
+              * TODO: Update the tags in Adobe Experience Manager Assets
               *  by invoking '/adobe/acp-assets-0.5.0/aem-update-tags'
               */
               '/adobe/acp-assets-0.5.0/aem-update-tags',
@@ -66,17 +70,17 @@ In this exercise you will add the **Adobe Sensei Auto Tag** function to auto tag
 
       ![](images/tags-results.png)
 
-6. If the app ran successfully then you will see the asset copied into an AEM instance within the same folder name as you defined in your Creative Cloud instance.
+6. If the app ran successfully then you will see the asset copied into an Adobe Experience Manager instance within the same folder name as you defined in your Creative Cloud instance.
 
-    > **NOTE:** Use the AEM host and credentials provided to login and check AEM for the file.
+    > **NOTE:** Use the Adobe Experience Manager host and credentials provided to login and check Adobe Experience Manager for the file.
 
-    Once you locate the file in AEM, either hover over it and click the circled **i** button (or click into it and click on **Properties**) to view the details and check for the existence of tags. One of them should say `created with io runtime` as shown below:
+    Once you locate the file in Adobe Experience Manager, either hover over it and click the circled **i** button (or click into it and click on **Properties**) to view the details and check for the existence of tags. One of them should say `created with io runtime` as shown below:
 
       ![](images/aem-tags.png)
 
-   
 
-    
+
+
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
 <a href="module8.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>

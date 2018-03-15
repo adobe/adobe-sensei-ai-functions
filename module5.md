@@ -1,10 +1,14 @@
 ---
 layout: module
-title: Exercise 1&#58; Adobe Sensei Image Quality
+title: Exercise 1&#58; Adobe Sensei function 1&#58; image quality
 ---
 
+<!--
+# Exercise 1&#58; Adobe Sensei function: image quality
+-->
+
 ## Overview
-In this exercise you will use the **Adobe Sensei Image Quality** function to retrieve aesthetic scores for an image, including an overall quality score.
+In this exercise you will use the **Adobe Sensei image quality** function to retrieve aesthetic scores for an image, including an overall quality score.
 
 ## Steps
 1. Open the **Visual Studio Code** application on your worksation located under the **Applications** folder (or in the dock toolbar).
@@ -12,15 +16,15 @@ In this exercise you will use the **Adobe Sensei Image Quality** function to ret
 2. Go to **File -> Open** and locate the folder for the exercises and solutions pre-loaded on your workstation in your user directory at `~/adobe-sensei-actions-lab`.
 
 3. Begin by opening the `exercises/exercise-1/composition.js` file to learn about some specific concepts you'll need to understand for the remainder of the lab.
-  
+
      `composer.sequence(task_1, task_2, ...)`
-  
+
       > Runs a sequence of tasks where the output parameter from the 1st task in the sequence is the input parameter for the next task.
 
      `composer.retain(task)`
-  
+
       > The `retain` call is a parameter retention function that produces an output with two fields: `params` and `result` where `params` is the input parameter of the composition and `result` is the output of `task`.
-  
+
 4. Before editing any code, go back into the **Adobe I/O Runtime Shell** application and preview the base composition flow with the following command:
 
        app preview ~/adobe-sensei-actions-lab/exercises/exercise-1/composition.js
@@ -43,9 +47,9 @@ In this exercise you will use the **Adobe Sensei Image Quality** function to ret
        ({result, params}) => Object.assign({}, result, params)
 
     This code will:
-    
+
     1. Invoke the `/sensei/1.0/sensei-imagequality` action with a parameter named `image` set to the `imageObject` parameter (previously defined in the base composition code and extracted from the asset created event).
-            
+
     2. Retain the result received from running the action for further use
 
 ## Try it!
@@ -70,15 +74,15 @@ In this exercise you will use the **Adobe Sensei Image Quality** function to ret
 1. Switch back to the **Adobe I/O Runtime Shell** application and run the `session list` command to list all of the current sessions:
 
        session list
-  
+
 1. Locate the most recent `asset_created_composition` running and click on the session id to view the session details.
 
-   The `RESULT` tab displays the results in JSON format. If the Image Quality Sensei action ran successfully, you should see an element in the JSON named `scores`, with values assigned for attributes further explained below. The `quality` value is an overall score based on the rest of the individual attributes, and ranges between 0-1 where a higher quality image results in a higher score.
+   The `RESULT` tab displays the results in JSON format. If the Sensei image quality action ran successfully, you should see an element in the JSON named `scores`, with values assigned for attributes further explained below. The `quality` value is an overall score based on the rest of the individual attributes, and ranges between 0-1 where a higher quality image results in a higher score.
 
     ![](images/image-quality-scores.png)
 
 
-   - **Quality** - The overall score 
+   - **Quality** - The overall score
    - **Balancing Element** - How balanced the overall composition is
    - **Color Harmony** - How balanced the colors are
    - **Interesting Content** - Whether or not the image contains interesting content

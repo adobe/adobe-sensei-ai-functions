@@ -1,20 +1,23 @@
 ---
 layout: module
-title: Exercise 2&#58; Manual Image Processing
+title: Exercise 2&#58; Manual image processing
 ---
+<!--
+# Exercise 2&#58; Manual image processing
+-->
 
 ## Overview
-In this exercise you will add code to check the overall quality score received from the previous **Adobe Sensei Image Quality** function. When the quality score does not meet an acceptable range, you will call an action to upload it back to Creative Cloud for manual processing.
+In this exercise you will add code to check the overall quality score received from the previous **Adobe Sensei image quality** function. When the quality score does not meet an acceptable range, you will call an action to upload it back to Creative Cloud for manual processing.
 
 ## Steps
-1. In Visual Studio Code, open the `exercises/exercise-2/composition.js` file. 
+1. In Visual Studio Code, open the `exercises/exercise-2/composition.js` file.
 
 2. Locate the `TODO` comment block and add the following snippet:
 
         /* TODO: ... */
         composer.if(
           params => params.scores.quality > 0.64,
-          /* if quality is met, process the image and upload to AEM */
+          /* if quality is met, process the image and upload to Adobe Experience Manager */
           (params) => params,
           /* if quality is NOT met, copy asset to manual process folder in CC */
          '/adobe/acp-assets-0.5.0/cc-upload-manual')
