@@ -1,15 +1,19 @@
 ---
 layout: module
-title: Exercise 3&#58; Adobe Sensei Body Crop
+title: Exercise 3&#58; Adobe Sensei function 1&#58; body crop
 ---
 
+<!--
+# Exercise 3&#58; Adobe Sensei function: body crop
+-->
+
 ## Overview
-In this exercise you will use the **Adobe Sensei Body Crop** function to identify reference points in the provided image to use for cropping out the body automatically.
+In this exercise you will use the **Adobe Sensei body crop** function to identify reference points in the provided image to use for cropping out the body automatically.
 
 ## Steps
-1. In Visual Studio Code, open `exercises/exercise-3/composition.js`. 
+1. In Visual Studio Code, open `exercises/exercise-3/composition.js`.
 2. Just after the `TODO` block, add the code snippet below to invoke the `/sensei/1.0/sensei-bodycrop` action. The code will pass in the `image` object and save the result in a `crops` object. The result will contain the constraints recommended for cropping out the body of the image.
- 
+
         /**
          *  TODO: Use the action '/sensei/1.0/sensei-bodycrop' to crop the body.
          */
@@ -45,7 +49,7 @@ In this exercise you will use the **Adobe Sensei Body Crop** function to identif
        session list
 
 6. Locate the most recent `asset_created_composition` running and click on the session id to view the result. The response should contain the coordinates to crop, like shown below:
-    
+
     ![](images/bodycrop-result.png)
 
 

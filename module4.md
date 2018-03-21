@@ -2,6 +2,9 @@
 layout: module
 title: Event Handler Webhook Definition
 ---
+<!--
+# Event Handler Webhook Definition
+-->
 
 ## Overview
 Understand how your Adobe I/O integration is configured with a webhook action to respond to **Creative Cloud Asset Created** events.
@@ -9,7 +12,7 @@ Understand how your Adobe I/O integration is configured with a webhook action to
 ## Steps
 1. Go back to the [Adobe I/O Console](https://console.adobe.io), ensure the **Integrations** tab is selected and click on your pre-defined integration again (ie: `Sensei lab X` - where X is your assigned lab #).
 
-2. Select the **Events** tab and notice an item listed with the name **Sensei Event Handler**. Click on the **Edit** button to the right of it  item to expand the details of the configured webhook, like shown below:
+2. Select the **Events** tab and notice an item listed with the name **Event Handler**. Click on the **Edit** button to the right of it  item to expand the details of the configured webhook, like shown below:
 
     ![](images/webhook-details.png)
 
@@ -36,9 +39,9 @@ Understand how your Adobe I/O integration is configured with a webhook action to
 6. Before leaving the Adobe I/O Runtime Shell, execute the `action get /sensei/1.0/` command to view the names of the Adobe Sensei functions currently defined in your namespace. You should see a list like the following. These actions will be used throughout the rest of the exercises to add specific Adobe Sensei functions.
 
    ![](images/sensei-action-list.png)
-  
 
-<!-- SAVE FOR LATER SETUP 
+
+<!-- SAVE FOR LATER SETUP
 ### Update Existing Integration
 1. Locate the integration by the name of (add name)
 2. Select the Events tab and click the **Add Webhook** button

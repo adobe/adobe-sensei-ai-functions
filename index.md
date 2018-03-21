@@ -1,15 +1,16 @@
 ---
 layout: home
-title:  Adobe Sensei functions 
+title:  Adobe Sensei functions
 ---
-
+<!--
 ## What You Will Learn
+-->
 
-In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, I/O platform and Adobe Sensei functions. Adobe Sensei functions enable the enterprise and partners to consume, compose and extend Adobe Sensei.
+In this lab you will learn how to build a serverless app that takes advantage of Adobe's cloud offerings, Adobe I/O developer tools and APIs and Adobe Sensei functions. Adobe Sensei functions enable the enterprise and partners to consume, compose and extend Adobe Sensei.
 
 ### Technology Used
 - [Apache OpenWhisk](https://openwhisk.apache.org/)
-- [Adobe I/O Platform](https://www.adobe.io/)
+- [Adobe I/O developer tools and APIs](https://www.adobe.io/)
 
 ### Project Exercises/Solutions
 The folder for the exercises and solutions have been pre-loaded on your workstation in your user directory at `~/adobe-sensei-actions-lab`
@@ -23,8 +24,8 @@ The folder for the exercises and solutions have been pre-loaded on your workstat
 - Browser
 - Internet Connection
 - Adobe Creative Cloud userid/pw
-- AEM instance
-- AEM userid/pw
+- Adobe Experience Manager instance
+- Adobe Experience Manager userid/pw
 - Images (stock photos provided)
 
 ## Issues/Feedback
