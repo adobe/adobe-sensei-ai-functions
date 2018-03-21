@@ -23,7 +23,7 @@ The Adobe I/O Runtime Shell is a graphical interface to help you visualize and d
 
 2. Next, invoke your `hello-app` with a `name` parameter:
 
-       app invoke -p name sensei
+       app invoke hello-app -p name sensei
 
 3. Next, preview the built-in `if.js` demo to see an example of a composition with  a flow structure:
 
