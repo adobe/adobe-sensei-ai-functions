@@ -131,7 +131,7 @@ composer.sequence(
           params => ({
             "image": params.imageObject,
             "confidence": 0.5,
-            "results": 10
+            "results": 20
           }),
         '/sensei/1.0/sensei-autotag',
         (r) => { r.tags.push({"tag": "created with io runtime", "confidence":"1"}); return r; }
