@@ -83,7 +83,7 @@ composer.sequence(
    * (params) => params
    */
   composer.if(
-    params => params.scores.quality > 0.64,
+    params => params.scores.quality > 0.62,
     /* if quality is met, process the image and upload to AEM */
     (params) => params,
     /* if quality is NOT met, copy asset to manual process folder in CC */
