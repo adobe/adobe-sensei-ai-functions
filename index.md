@@ -23,10 +23,10 @@ The folder for the exercises and solutions have been pre-loaded on your workstat
 - Visual Studio Code
 - Browser
 - Internet Connection
-- Adobe Creative Cloud userid/pw
-- Adobe Experience Manager instance
-- Adobe Experience Manager userid/pw
-- Images (stock photos provided)
+- [Adobe Creative Cloud userid/pw](https://apiplatform.github.io/summit-lab-741-accounts/01.html)
+- [Adobe Experience Manager instance](http://sensei-lab.adobeatadobe.com:4502/assets.html/content/dam)
+- Adobe Experience Manager userid/pw (provided in the lab)
+- [Images (stock photos provided)](https://adobe.ly/2FYbFgR)
 
 ## Issues/Feedback
 
